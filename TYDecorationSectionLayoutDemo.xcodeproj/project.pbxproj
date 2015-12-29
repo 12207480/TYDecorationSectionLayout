@@ -13,6 +13,10 @@
 		B0496DA01C32BDE10011F9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0496D9E1C32BDE10011F9D3 /* Main.storyboard */; };
 		B0496DA21C32BDE10011F9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0496DA11C32BDE10011F9D3 /* Assets.xcassets */; };
 		B0496DA51C32BDE10011F9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0496DA31C32BDE10011F9D3 /* LaunchScreen.storyboard */; };
+		B0496DAF1C32BE210011F9D3 /* TYDecorationSectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0496DAE1C32BE210011F9D3 /* TYDecorationSectionLayout.m */; };
+		B0496DBD1C32C4C70011F9D3 /* FirstDecorationSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0496DBB1C32C4C70011F9D3 /* FirstDecorationSectionView.m */; };
+		B0496DBE1C32C4C70011F9D3 /* FirstDecorationSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0496DBC1C32C4C70011F9D3 /* FirstDecorationSectionView.xib */; };
+		B0496DC71C32C73F0011F9D3 /* SecondDecorationSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0496DC51C32C73F0011F9D3 /* SecondDecorationSectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		B0496DA11C32BDE10011F9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0496DA41C32BDE10011F9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0496DA61C32BDE10011F9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0496DAD1C32BE210011F9D3 /* TYDecorationSectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDecorationSectionLayout.h; sourceTree = "<group>"; };
+		B0496DAE1C32BE210011F9D3 /* TYDecorationSectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDecorationSectionLayout.m; sourceTree = "<group>"; };
+		B0496DBA1C32C4C70011F9D3 /* FirstDecorationSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDecorationSectionView.h; sourceTree = "<group>"; };
+		B0496DBB1C32C4C70011F9D3 /* FirstDecorationSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDecorationSectionView.m; sourceTree = "<group>"; };
+		B0496DBC1C32C4C70011F9D3 /* FirstDecorationSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstDecorationSectionView.xib; sourceTree = "<group>"; };
+		B0496DC51C32C73F0011F9D3 /* SecondDecorationSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondDecorationSectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,15 @@
 		B0496D941C32BDE10011F9D3 /* TYDecorationSectionLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B0496DAC1C32BE210011F9D3 /* TYDecorationSectionLayout */,
 				B0496D981C32BDE10011F9D3 /* AppDelegate.h */,
 				B0496D991C32BDE10011F9D3 /* AppDelegate.m */,
 				B0496D9B1C32BDE10011F9D3 /* ViewController.h */,
 				B0496D9C1C32BDE10011F9D3 /* ViewController.m */,
+				B0496DBA1C32C4C70011F9D3 /* FirstDecorationSectionView.h */,
+				B0496DBB1C32C4C70011F9D3 /* FirstDecorationSectionView.m */,
+				B0496DBC1C32C4C70011F9D3 /* FirstDecorationSectionView.xib */,
+				B0496DC51C32C73F0011F9D3 /* SecondDecorationSectionView.xib */,
 				B0496D9E1C32BDE10011F9D3 /* Main.storyboard */,
 				B0496DA11C32BDE10011F9D3 /* Assets.xcassets */,
 				B0496DA31C32BDE10011F9D3 /* LaunchScreen.storyboard */,
@@ -77,6 +92,15 @@
 				B0496D961C32BDE10011F9D3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0496DAC1C32BE210011F9D3 /* TYDecorationSectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B0496DAD1C32BE210011F9D3 /* TYDecorationSectionLayout.h */,
+				B0496DAE1C32BE210011F9D3 /* TYDecorationSectionLayout.m */,
+			);
+			path = TYDecorationSectionLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0496DA51C32BDE10011F9D3 /* LaunchScreen.storyboard in Resources */,
+				B0496DC71C32C73F0011F9D3 /* SecondDecorationSectionView.xib in Resources */,
 				B0496DA21C32BDE10011F9D3 /* Assets.xcassets in Resources */,
+				B0496DBE1C32C4C70011F9D3 /* FirstDecorationSectionView.xib in Resources */,
 				B0496DA01C32BDE10011F9D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0496D9D1C32BDE10011F9D3 /* ViewController.m in Sources */,
+				B0496DBD1C32C4C70011F9D3 /* FirstDecorationSectionView.m in Sources */,
 				B0496D9A1C32BDE10011F9D3 /* AppDelegate.m in Sources */,
+				B0496DAF1C32BE210011F9D3 /* TYDecorationSectionLayout.m in Sources */,
 				B0496D971C32BDE10011F9D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
