@@ -18,6 +18,14 @@
 
 @implementation TYDecorationSectionLayout
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _decorationViewContainXib = YES;
+    }
+    return self;
+}
+
 - (void)prepareLayout
 {
     [super prepareLayout];
@@ -46,7 +54,11 @@
             continue;
         
         if (section < numberOfSection) {
-            [self registerNib:[UINib nibWithNibName:decorationViewOfKind bundle:nil] forDecorationViewOfKind:decorationViewOfKind];
+            if (_decorationViewContainXib) {
+                [self registerNib:[UINib nibWithNibName:decorationViewOfKind bundle:nil] forDecorationViewOfKind:decorationViewOfKind];
+            }else {
+                [self registerClass:NSClassFromString(decorationViewOfKind) forDecorationViewOfKind:decorationViewOfKind];
+            }
         }
         
         CGRect sectionFrame = [self frameOfSectionViewWithSection:section];

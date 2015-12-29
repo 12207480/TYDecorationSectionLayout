@@ -11,7 +11,6 @@
 @interface TYDecorationSectionLayout : UICollectionViewFlowLayout
 
 @property (nonatomic, assign) BOOL alternateDecorationViews; // 交替DecorationView
-
-@property (nonatomic, strong) NSArray *decorationViewOfKinds;// (xib names) custom xib inherit UICollectionReusableView
-
+@property (nonatomic, assign) BOOL decorationViewContainXib; // default YES decorationView contain xib
+@property (nonatomic, strong) NSArray *decorationViewOfKinds;// (view or xib names) custom view or xib need inherit UICollectionReusableView
 @end
