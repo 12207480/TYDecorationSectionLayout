@@ -33,7 +33,7 @@
     TYDecorationSectionLayout *layout = [[TYDecorationSectionLayout alloc]init];
     //layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     layout.alternateDecorationViews = YES;
-    // first or second also ok
+    // costom xib names
     layout.decorationViewOfKinds = @[@"FirstDecorationSectionView",@"SecondDecorationSectionView"];
     
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
