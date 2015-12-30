@@ -26,6 +26,7 @@
     return self;
 }
 
+// override
 - (void)prepareLayout
 {
     [super prepareLayout];
@@ -106,6 +107,7 @@
     return frame;
 }
 
+// override
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
     NSMutableArray *attributes = [NSMutableArray arrayWithArray:[super layoutAttributesForElementsInRect:rect]];

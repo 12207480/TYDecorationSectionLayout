@@ -17,6 +17,7 @@
 		B0496DBD1C32C4C70011F9D3 /* FirstDecorationSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0496DBB1C32C4C70011F9D3 /* FirstDecorationSectionView.m */; };
 		B0496DBE1C32C4C70011F9D3 /* FirstDecorationSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0496DBC1C32C4C70011F9D3 /* FirstDecorationSectionView.xib */; };
 		B0496DC71C32C73F0011F9D3 /* SecondDecorationSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0496DC51C32C73F0011F9D3 /* SecondDecorationSectionView.xib */; };
+		B05F322D1C340906009E6DF8 /* ThirdDecorationSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05F322B1C340906009E6DF8 /* ThirdDecorationSectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B0496DBB1C32C4C70011F9D3 /* FirstDecorationSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDecorationSectionView.m; sourceTree = "<group>"; };
 		B0496DBC1C32C4C70011F9D3 /* FirstDecorationSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstDecorationSectionView.xib; sourceTree = "<group>"; };
 		B0496DC51C32C73F0011F9D3 /* SecondDecorationSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondDecorationSectionView.xib; sourceTree = "<group>"; };
+		B05F322B1C340906009E6DF8 /* ThirdDecorationSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdDecorationSectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				B0496DBB1C32C4C70011F9D3 /* FirstDecorationSectionView.m */,
 				B0496DBC1C32C4C70011F9D3 /* FirstDecorationSectionView.xib */,
 				B0496DC51C32C73F0011F9D3 /* SecondDecorationSectionView.xib */,
+				B05F322B1C340906009E6DF8 /* ThirdDecorationSectionView.xib */,
 				B0496D9E1C32BDE10011F9D3 /* Main.storyboard */,
 				B0496DA11C32BDE10011F9D3 /* Assets.xcassets */,
 				B0496DA31C32BDE10011F9D3 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 			files = (
 				B0496DA51C32BDE10011F9D3 /* LaunchScreen.storyboard in Resources */,
 				B0496DC71C32C73F0011F9D3 /* SecondDecorationSectionView.xib in Resources */,
+				B05F322D1C340906009E6DF8 /* ThirdDecorationSectionView.xib in Resources */,
 				B0496DA21C32BDE10011F9D3 /* Assets.xcassets in Resources */,
 				B0496DBE1C32C4C70011F9D3 /* FirstDecorationSectionView.xib in Resources */,
 				B0496DA01C32BDE10011F9D3 /* Main.storyboard in Resources */,
@@ -329,6 +333,7 @@
 				B0496DAB1C32BDE10011F9D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

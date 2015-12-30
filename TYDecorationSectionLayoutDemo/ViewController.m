@@ -34,7 +34,7 @@
     //layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     layout.alternateDecorationViews = YES;
     // costom xib names
-    layout.decorationViewOfKinds = @[@"FirstDecorationSectionView",@"SecondDecorationSectionView"];
+    layout.decorationViewOfKinds = @[@"ThirdDecorationSectionView",@"FirstDecorationSectionView",@"SecondDecorationSectionView"];
     
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     collectionView.backgroundColor = [UIColor lightGrayColor];
