@@ -32,21 +32,15 @@
 {
     [super prepareLayout];
     
-    if (_decorationViewOfKinds.count == 0) {
-        return;
-    }
-    
     _insetForSectionAtIndexFlag = [self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)];
     
-    [self configureDecorationAttributes];
+    if (_decorationViewOfKinds.count > 0) {
+        [self configureDecorationAttributes];
+    }
 }
 
 - (void)configureDecorationAttributes
 {
-    if (_decorationViewOfKinds.count == 0) {
-        return;
-    }
-    
     NSInteger numberOfSection = self.collectionView.numberOfSections;
     NSMutableArray *decorationAttributes = [NSMutableArray arrayWithCapacity:numberOfSection];
     
