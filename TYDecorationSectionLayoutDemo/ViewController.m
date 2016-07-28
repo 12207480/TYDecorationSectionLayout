@@ -26,6 +26,8 @@
     [self addCollectionView];
     
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerId"];
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footerId"];
 }
 
 - (void)addCollectionView
@@ -34,7 +36,7 @@
     //layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     layout.alternateDecorationViews = YES;
     // costom xib names
-    layout.decorationViewOfKinds = @[@"ThirdDecorationSectionView",@"FirstDecorationSectionView",@"SecondDecorationSectionView"];
+    layout.decorationViewOfKinds = @[@"ThirdDecorationSectionView",@"FirstDecorationSectionView",@"SecondDecorationSectionView",@"FirstDecorationSectionView",@"ThirdDecorationSectionView"];
     
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     collectionView.backgroundColor = [UIColor lightGrayColor];
@@ -68,6 +70,32 @@
     UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithWhite:(rand()%255)/255.0 alpha:1.0];
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    if (kind==UICollectionElementKindSectionFooter) {
+        UICollectionReusableView *footer = [collectionView  dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"footerId" forIndexPath:indexPath];
+        footer.backgroundColor = [UIColor redColor];
+        return footer;
+    }
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        UICollectionReusableView *header = [collectionView  dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerId" forIndexPath:indexPath];
+        header.backgroundColor = [UIColor orangeColor];
+        return header;
+    }
+    return nil;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    return CGSizeMake(0, 46);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+{
+    return CGSizeMake(0, 32);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
